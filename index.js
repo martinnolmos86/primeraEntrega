@@ -76,7 +76,7 @@ class ProductManager {
     const product = this.products.find((product) => product.id === id);
 
     if (!product) {
-      console.error("Error: Producto no encontrado (Not found).");
+      return console.error("Error: Producto no encontrado (Not found).");
     }
 
     return product;
